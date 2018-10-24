@@ -23,11 +23,11 @@ public class Exercise12 {
         System.out.println("Generate file");
         MyBenchmark.printTime(Exercise12::createLargeFile);
         System.out.println("Reading buffered");
-        MyBenchmark.printTime(Exercise12::readBuffered);
+        MyBenchmark.printTimeMultiple(Exercise12::readBuffered);
         System.out.println("Reading NIO");
-        MyBenchmark.printTime(Exercise12::readNIO);
+        MyBenchmark.printTimeMultiple(Exercise12::readNIO);
         System.out.println("Reading mapped");
-        MyBenchmark.printTime(Exercise12::readMemoryMapped);
+        MyBenchmark.printTimeMultiple(Exercise12::readMemoryMapped);
         System.out.println("Finished");
 
     }
